@@ -1,0 +1,32 @@
+# TimerPro n8n Environment Variables
+# Add these in n8n → Settings → Variables
+
+# ─── API KEYS ──────────────────────────────────────────
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+# Get from: https://console.anthropic.com
+
+INDEXNOW_KEY=your-indexnow-key-here
+# Generate a random 32-char string, then place a file at:
+# https://timerpro.app/YOUR_KEY.txt containing just the key
+
+# ─── GOOGLE SERVICES ───────────────────────────────────
+GOOGLE_SHEET_ID=your-google-sheets-id-here
+# Create one Sheet with tabs: Blog Posts | Backlinks | Rankings | Revenue | Social Posts
+
+ADSENSE_ACCOUNT_ID=pub-XXXXXXXXXXXXXXXX
+# From: https://adsense.google.com → Account → Account information
+
+# ─── NOTIFICATIONS ─────────────────────────────────────
+SLACK_WEBHOOK=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
+# Create at: https://api.slack.com/apps → Incoming Webhooks
+# Or skip Slack — replace with email using n8n's email node
+
+ADMIN_EMAIL=hello@timerpro.app
+
+# ─── OAUTH CONNECTIONS IN n8n ──────────────────────────
+# In n8n, also set up these OAuth connections:
+# 1. Google Sheets (Credentials → New → Google Sheets OAuth2)
+# 2. Google Search Console (Credentials → New → Google OAuth2 API)
+#    Scopes needed: https://www.googleapis.com/auth/webmasters.readonly
+# 3. AdSense (Credentials → New → Google OAuth2 API)
+#    Scopes needed: https://www.googleapis.com/auth/adsense.readonly

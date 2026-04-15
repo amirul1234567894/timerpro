@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Block API endpoints from crawlers
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Allow important files
+Allow: /manifest.json
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Sitemaps
+Sitemap: https://timerpro.app/sitemap.xml
+
+# Google AdSense media bot — allow
+User-agent: Mediapartners-Google
+Allow: /
+
+# Bing
+User-agent: bingbot
+Crawl-delay: 5
+
+# Rate limit aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
