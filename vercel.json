@@ -3,11 +3,14 @@
   "name": "timerpro",
   "public": true,
   "routes": [
-    { "src": "/sw.js",        "dest": "/sw.js",        "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
-    { "src": "/manifest.json","dest": "/manifest.json","headers": { "Cache-Control": "public, max-age=86400" } },
-    { "src": "/sitemap.xml",  "dest": "/sitemap.xml",  "headers": { "Content-Type": "application/xml" } },
-    { "src": "/robots.txt",   "dest": "/robots.txt",   "headers": { "Cache-Control": "public, max-age=86400" } },
-    { "src": "/(.*)",         "dest": "/index.html" }
+    { "src": "/sw.js",         "dest": "/sw.js",         "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
+    { "src": "/manifest.json", "dest": "/manifest.json", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "src": "/sitemap.xml",   "dest": "/sitemap.xml",   "headers": { "Content-Type": "application/xml; charset=utf-8" } },
+    { "src": "/robots.txt",    "dest": "/robots.txt",    "headers": { "Cache-Control": "public, max-age=86400", "Content-Type": "text/plain; charset=utf-8" } },
+    { "src": "/favicon.svg",   "dest": "/favicon.svg" },
+    { "src": "/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt", "dest": "/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt", "headers": { "Content-Type": "text/plain; charset=utf-8" } },
+    { "src": "/(.*\\.(txt|xml|json|svg|png|jpg|jpeg|gif|ico|webp|js|css|woff|woff2|ttf|eot|map))", "dest": "/$1" },
+    { "src": "/(.*)",          "dest": "/index.html" }
   ],
   "headers": [
     {
@@ -19,7 +22,7 @@
         { "key": "Referrer-Policy",              "value": "strict-origin-when-cross-origin" },
         { "key": "Permissions-Policy",           "value": "camera=(), microphone=(), geolocation=(), payment=()" },
         { "key": "Strict-Transport-Security",    "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Content-Security-Policy",      "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://googleads.g.doubleclick.net; connect-src 'self' https://www.google-analytics.com" },
+        { "key": "Content-Security-Policy",      "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://googleads.g.doubleclick.net; connect-src 'self' https://www.google-analytics.com https://api.indexnow.org" },
         { "key": "X-Permitted-Cross-Domain-Policies", "value": "none" },
         { "key": "Cross-Origin-Opener-Policy",   "value": "same-origin-allow-popups" },
         { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
