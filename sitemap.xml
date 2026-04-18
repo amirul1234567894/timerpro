@@ -4,64 +4,64 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://timerpro.app/</loc>
+    <loc>https://timerpro.vercel.app/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.app/?lang=bn"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://timerpro.app/?lang=hi"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://timerpro.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.vercel.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.vercel.app/?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://timerpro.vercel.app/?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://timerpro.vercel.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.vercel.app/"/>
     <image:image>
-      <image:loc>https://timerpro.app/og-image.png</image:loc>
+      <image:loc>https://timerpro.vercel.app/og-image.png</image:loc>
       <image:title>Timer &amp; Stopwatch Pro</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?tool=timer</loc>
+    <loc>https://timerpro.vercel.app/?tool=timer</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.app/?tool=timer&amp;lang=en"/>
-    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.app/?tool=timer&amp;lang=bn"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/?tool=timer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.vercel.app/?tool=timer&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.vercel.app/?tool=timer&amp;lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.vercel.app/?tool=timer"/>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?tool=stopwatch</loc>
+    <loc>https://timerpro.vercel.app/?tool=stopwatch</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.app/?tool=stopwatch&amp;lang=en"/>
-    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.app/?tool=stopwatch&amp;lang=bn"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/?tool=stopwatch"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://timerpro.vercel.app/?tool=stopwatch&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://timerpro.vercel.app/?tool=stopwatch&amp;lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.vercel.app/?tool=stopwatch"/>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?page=about</loc>
+    <loc>https://timerpro.vercel.app/?page=about</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?page=contact</loc>
+    <loc>https://timerpro.vercel.app/?page=contact</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?page=terms</loc>
+    <loc>https://timerpro.vercel.app/?page=terms</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://timerpro.app/?page=privacy</loc>
+    <loc>https://timerpro.vercel.app/?page=privacy</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
