@@ -3,6 +3,8 @@
   "name": "timerpro",
   "public": true,
   "routes": [
+    { "src": "/blog",        "dest": "/blog/index.html" },
+    { "src": "/blog/(.*)",   "dest": "/blog/$1" },
     { "src": "/sw.js",         "dest": "/sw.js",         "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
     { "src": "/manifest.json", "dest": "/manifest.json", "headers": { "Cache-Control": "public, max-age=86400" } },
     { "src": "/sitemap.xml",   "dest": "/sitemap.xml",   "headers": { "Content-Type": "application/xml; charset=utf-8" } },
