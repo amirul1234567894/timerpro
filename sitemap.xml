@@ -3,7 +3,6 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home -->
   <url>
     <loc>https://timerpro.app/</loc>
     <lastmod>2025-01-01</lastmod>
@@ -24,11 +23,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/"/>
     <image:image>
       <image:loc>https://timerpro.app/og-image.png</image:loc>
-      <image:title>Timer & Stopwatch Pro</image:title>
+      <image:title>Timer &amp; Stopwatch Pro</image:title>
     </image:image>
   </url>
 
-  <!-- Timer Tool -->
   <url>
     <loc>https://timerpro.app/?tool=timer</loc>
     <lastmod>2025-01-01</lastmod>
@@ -41,7 +39,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/?tool=timer"/>
   </url>
 
-  <!-- Stopwatch Tool -->
   <url>
     <loc>https://timerpro.app/?tool=stopwatch</loc>
     <lastmod>2025-01-01</lastmod>
@@ -54,7 +51,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://timerpro.app/?tool=stopwatch"/>
   </url>
 
-  <!-- About Page -->
   <url>
     <loc>https://timerpro.app/?page=about</loc>
     <lastmod>2025-01-01</lastmod>
@@ -62,7 +58,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Contact Page -->
   <url>
     <loc>https://timerpro.app/?page=contact</loc>
     <lastmod>2025-01-01</lastmod>
@@ -70,7 +65,6 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Terms & Conditions -->
   <url>
     <loc>https://timerpro.app/?page=terms</loc>
     <lastmod>2025-01-01</lastmod>
@@ -78,7 +72,6 @@
     <priority>0.4</priority>
   </url>
 
-  <!-- Privacy Policy -->
   <url>
     <loc>https://timerpro.app/?page=privacy</loc>
     <lastmod>2025-01-01</lastmod>
