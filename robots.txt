@@ -1,33 +1,39 @@
 User-agent: *
 Allow: /
 
-# Block API endpoints from crawlers
+# Block API and admin endpoints only
 Disallow: /api/
 Disallow: /admin/
-Disallow: /*.json$
 
-# Allow important files
+# NOTE: Do NOT block *.json — manifest.json must be crawlable for PWA SEO signals
+# Previously had: Disallow: /*.json$ ← this was WRONG, removed
+
+# Important files explicitly allowed
 Allow: /manifest.json
 Allow: /sitemap.xml
 Allow: /robots.txt
+Allow: /favicon.svg
 
-# Sitemaps
-Sitemap: https://timerpro.app/sitemap.xml
+# Sitemaps — both Google and Bing read this
+Sitemap: https://timerpro.vercel.app/sitemap.xml
 
-# Google AdSense media bot — allow
+# Google AdSense media bot
 User-agent: Mediapartners-Google
 Allow: /
 
-# Bing
+# Bing — gentle crawl delay
 User-agent: bingbot
-Crawl-delay: 5
+Allow: /
+Crawl-delay: 3
 
-# Rate limit aggressive bots
+# Ahrefs
 User-agent: AhrefsBot
 Crawl-delay: 10
 
+# Semrush
 User-agent: SemrushBot
 Crawl-delay: 10
 
+# Block MJ12bot (low quality)
 User-agent: MJ12bot
 Disallow: /
