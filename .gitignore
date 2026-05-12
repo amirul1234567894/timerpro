@@ -1,0 +1,7 @@
+
+# Backup files (local only)
+*.backup
+*.before-*.backup
+
+# PowerShell automation scripts (local only)
+*.ps1
