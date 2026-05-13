@@ -1,33 +1,40 @@
 {
-  "version": 2,
-  "name": "timerpro",
-  "public": true,
-  "routes": [
-    { "src": "/blog",        "dest": "/blog/index.html" },
-    { "src": "/blog/(.*)",   "dest": "/blog/$1" },
-    { "src": "/sw.js",         "dest": "/sw.js",         "headers": { "Cache-Control": "no-cache, no-store, must-revalidate" } },
-    { "src": "/manifest.json", "dest": "/manifest.json", "headers": { "Cache-Control": "public, max-age=86400" } },
-    { "src": "/sitemap.xml",   "dest": "/sitemap.xml",   "headers": { "Content-Type": "application/xml; charset=utf-8" } },
-    { "src": "/robots.txt",    "dest": "/robots.txt",    "headers": { "Cache-Control": "public, max-age=86400", "Content-Type": "text/plain; charset=utf-8" } },
-    { "src": "/favicon.svg",   "dest": "/favicon.svg" },
-    { "src": "/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt", "dest": "/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt", "headers": { "Content-Type": "text/plain; charset=utf-8" } },
-    { "src": "/(.*\\.(txt|xml|json|svg|png|jpg|jpeg|gif|ico|webp|js|css|woff|woff2|ttf|eot|map))", "dest": "/$1" },
-    { "src": "/(.*)",          "dest": "/index.html" }
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/blog", "destination": "/blog/index.html" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options",       "value": "nosniff" },
-        { "key": "X-Frame-Options",              "value": "SAMEORIGIN" },
-        { "key": "X-XSS-Protection",             "value": "1; mode=block" },
-        { "key": "Referrer-Policy",              "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy",           "value": "camera=(), microphone=(), geolocation=(), payment=()" },
-        { "key": "Strict-Transport-Security",    "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Content-Security-Policy",      "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://googleads.g.doubleclick.net; connect-src 'self' https://www.google-analytics.com https://api.indexnow.org" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()" },
+        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin-allow-popups" },
         { "key": "X-Permitted-Cross-Domain-Policies", "value": "none" },
-        { "key": "Cross-Origin-Opener-Policy",   "value": "same-origin-allow-popups" },
-        { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://www.google-analytics.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://adservice.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://*.adtrafficquality.google https://va.vercel-scripts.com; script-src-elem 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://www.google-analytics.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://adservice.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://*.adtrafficquality.google https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https: http:; connect-src 'self' https://www.google-analytics.com https://*.googlesyndication.com https://pagead2.googlesyndication.com https://api.indexnow.org https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://*.adtrafficquality.google https://*.google.com https://*.doubleclick.net; frame-src 'self' https://googleads.g.doubleclick.net https://*.doubleclick.net https://*.adtrafficquality.google; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests" }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/icons/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
