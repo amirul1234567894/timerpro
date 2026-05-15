@@ -5,3 +5,7 @@
 
 # PowerShell automation scripts (local only)
 *.ps1
+
+# Local backups - never push to repo
+*.backup
+index.html.before-*
