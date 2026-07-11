@@ -1,4 +1,4 @@
-# TimerPro — Complete Backlink Strategy
+﻿# TimerPro — Complete Backlink Strategy
 # 100+ High-Quality Backlink Sources
 
 ## TIER 1 — High DA (80+) Free Submissions
@@ -25,7 +25,7 @@
 | Toolify.ai | 52 | https://www.toolify.ai/submit |
 | SaaSHub | 70 | https://www.saashub.com/products/new |
 | GetApp | 76 | https://www.getapp.com/listing/add-application/ |
-| Trustpilot | 91 | https://www.trustpilot.com/evaluate/timerpro.app |
+| Trustpilot | 91 | https://www.trustpilot.com/evaluate/timerpro.autoflowa.in |
 | Startup Stash | 55 | https://startupstash.com/add-listing/ |
 | Uneed | 48 | https://www.uneed.best/submit-a-tool |
 | MicroLaunch | 45 | https://microlaunch.net |
@@ -56,9 +56,9 @@ r/FocusTime            30K members
 
 **Reddit post templates (use sparingly, 1 per week max):**
 ```
-Title: "I built a free online timer — no signup, no ads, works offline"
-Title: "Best free Pomodoro timer that works offline? [I found one]"
-Title: "TIL you can use timerpro.app as a fullscreen kitchen timer"
+Title: "I built a free online timer — no signup, minimal ads, works offline"
+Title: "I built a free Pomodoro timer that works offline - feedback welcome"
+Title: "I made a fullscreen kitchen timer (timerpro.autoflowa.in) - would love feedback"
 ```
 
 ### Quora Answers
@@ -105,7 +105,7 @@ readers likely already know (Google Timer, Timer.guru) alongside some
 lesser-known gems.
 
 Full draft ready to share. No payment needed — I just want the 
-exposure for my own tool (TimerPro.app) which appears in the article.
+exposure for my own tool (timerpro.autoflowa.in) which appears in the article.
 
 Worth a look?
 

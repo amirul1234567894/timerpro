@@ -1,8 +1,10 @@
-{
+﻿{
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/blog", "destination": "/blog/index.html" }
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/bn", "destination": "/bn/index.html" },
+    { "source": "/hi", "destination": "/hi/index.html" }
   ],
   "headers": [
     {

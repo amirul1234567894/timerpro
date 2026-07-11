@@ -9,3 +9,6 @@
 # Local backups - never push to repo
 *.backup
 index.html.before-*
+
+*.bak-*
+head-only.txt
